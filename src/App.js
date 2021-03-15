@@ -30,7 +30,7 @@ function App() {
     await api.delete(`repositories/${id}`)
 
     setRepo(repositories.filter(
-      repositories => repositories !== id
+      repository => repository.id !== id
     ))
   }
 
