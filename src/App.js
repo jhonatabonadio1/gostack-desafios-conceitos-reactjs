@@ -11,7 +11,7 @@ function App() {
     api.get("repositories").then(response => {
       setRepo(response.data)
     })
-  }, [repositories])
+  }, [])
 
   async function handleAddRepository() {
     const response = await api.post("repositories", {
